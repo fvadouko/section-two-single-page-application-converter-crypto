@@ -17,6 +17,12 @@ async function fetchExchangeRate(
     `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${toCurrency}&ids=${fromCurrency}&sparkline=true&locale=en`
   );
   const coin = response.data[0] as Coin;
+  console.log(
+    'useExchangeRates',
+    fromCurrency,
+    toCurrency,
+    coin.current_price
+  );
   return coin.current_price;
 }
 
