@@ -66,7 +66,7 @@ const Exchange = () => {
       setIsloading(true);
       const amount = event.target.value;
 
-      const exchangeRateB = exchangeRate || 0;
+      const exchangeRateB = exchangeRate ?? 0;
       if (exchangeRateB === 0) {
         setToAmount(amount);
         setFromAmount('');
