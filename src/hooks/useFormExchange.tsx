@@ -36,7 +36,7 @@ export const useFormExchange = () => {
   const handleCurrencyChange = (currency: ICurrency) => {
     setActiveCurrency(currency);
     const exchangeRateB = exchangeRate || 0;
-    setFromAmount((parseFloat(toAmount) * exchangeRateB).toString());
+    setFromAmount((parseFloat(toAmount) / exchangeRateB).toString());
   };
 
   const handleFromAmountChange = (

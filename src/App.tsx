@@ -4,48 +4,6 @@ import { uniswapLogo } from './assets';
 import { Exchange, WalletButton } from './components';
 
 function App() {
-  // return (
-  //   <>
-  //     <div>
-  //       <label>From:</label>
-  //       <select
-  //         value={fromCurrency.id}
-  //         onChange={handleFromCurrencyChange}
-  //       >
-  //         <option value="bitcoin">BTC</option>
-  //         <option value="ethereum">ETH</option>
-  //         <option value="litecoin">LTC</option>
-  //       </select>
-  //       <input
-  //         type="number"
-  //         value={fromAmount}
-  //         onChange={handleFromAmountChange}
-  //       />
-  //     </div>
-  //     <div>
-  //       <label>To:</label>
-  //       <select
-  //         value={toCurrency.id}
-  //         onChange={handleToCurrencyChange}
-  //       >
-  //         <option value="usd">USD</option>
-  //         <option value="eur">EUR</option>
-  //         <option value="gbp">GBP</option>
-  //       </select>
-  //       <input
-  //         type="number"
-  //         value={toAmount}
-  //         onChange={handleToAmountChange}
-  //       />
-  //     </div>
-  //     <div>
-  //       <p>
-  //
-  //       </p>
-  //     </div>
-  //   </>
-  // );
-
   return (
     <div className={styles.container}>
       <div className={styles.innerContainer}>
